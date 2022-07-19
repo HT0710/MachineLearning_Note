@@ -15,7 +15,9 @@ Ta cần xác định được giá trị lớn nhất (max) và giá trị nh�
 
 Giá trị được normalize theo công thức sau:
 
-`y = (x - min) / (max - min)`
+```
+y = (x - min) / (max - min)
+```
 
 ### Code
 Có thể thực hiện normalize dữ liệu sử dụng thư viện scikit-learn với MinMaxScaler.
@@ -66,15 +68,21 @@ với x̄ và σ lần lượt là kỳ vọng và phương sai (standard deviat
 
 Công thức chuẩn hóa:
 
-`y = (x - mean) / standard_deviation`
+```
+y = (x - mean) / standard_deviation
+```
 
 Trong đó mean được tính như sau:
 
-`mean = sum(x) / count(x)`
+```
+mean = sum(x) / count(x)
+```
 
 Để tính độ lệch chuẩn (standard_deviation):
 
-`standard_deviation = sqrt( sum( (x - mean)^2 ) / count(x))`
+```
+standard_deviation = sqrt( sum( (x - mean)^2 ) / count(x))
+```
 
 ### Code
 Có thể chuẩn hóa dữ liệu bằng thư viện scikit-learn với StandardScaler:
